@@ -1,0 +1,233 @@
+body {
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  font-size: var(--font-size-text);
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-section);
+  gap: 20px;
+  text-align: center;
+  grid-area: header;
+}
+
+.logo {
+  color: var(--link-color);
+  font-size: var(--font-size-title);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navItem {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* main */
+
+main {
+  grid-area: main;
+}
+
+.teaser {
+  height: 200px;
+  background-image: url(../assets/backgroundindex.jpeg);
+  display: flex;
+  align-items: center;
+}
+
+.teaserTitle {
+  color: var(--secondary-color);
+  padding: 20px 0px 20px 20px;
+  font-size: var(--font-size-teaser);
+  font-weight: 700;
+  width: 50%;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: var(--padding-section);
+}
+
+.homeLeft,
+.homeRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: var(--padding-section);
+  border-bottom: 1px solid black;
+}
+
+.homeTitle {
+  font-size: var(--font-size-subtitle);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.homeLink {
+  color: var(--link-color);
+}
+
+.homeText {
+  color: var(--tertiary-color);
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-section);
+  gap: 20px;
+  color: white;
+}
+
+.portfolioItem {
+  height: 400px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.itemTitle {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: var(--font-size-subtitle);
+}
+
+.itemAuthor {
+  text-transform: capitalize;
+}
+
+.item-1 {
+  background-image: url(../assets/la-sheats.jpg);
+}
+
+.item-2 {
+  background-image: url(../assets/la-stahl.jpg);
+}
+
+.item-3 {
+  background-image: url(../assets/la-wright.jpg);
+}
+
+.item-4 {
+  background-image: url(../assets/la-lovell.jpg);
+}
+
+.item-5 {
+  background-image: url(../assets/la-schindler.jpg);
+}
+
+.item-6 {
+  background-image: url(../assets/la-eames.jpg);
+}
+/* contact */
+
+#contact {
+  padding: var(--padding-section);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  font-size: var(--font-size-subtitle);
+}
+
+.sectionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+
+.sectionForm input,
+.sectionForm textarea {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.contactForm button {
+  border: 1px solid black;
+  padding: 7px 40px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/* footer */
+
+footer {
+  grid-area: footer;
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* variabelen */
+
+:root {
+  --bg-color: rgb(244, 244, 244);
+  --secondary-color: rgb(231, 227, 79);
+  --primary-color: rgb(18, 18, 18);
+  --tertiary-color: rgb(100, 100, 100);
+  --link-color: rgb(149, 147, 100);
+
+  --font-size-teaser: 3.5rem;
+  --font-size-title: 2.4rem;
+  --font-size-text: 1.6rem;
+  --font-size-subtitle: 2rem;
+
+  --padding-section: 20px;
+
+  font-size: 62.5%;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav > ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+}

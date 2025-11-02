@@ -78,11 +78,11 @@ Test je website op responsiviteit, zodat die werkt op alle schermgroottes.
 
 #### CSS
 
-- Maak gebruik van een reset.css
-- De algemene layout van de website staat in een **grid**
-- Binnen sections zoals portfolio gebrui je **flexbox**
-- Gebruik als font "Arial, Helvetica, sans-serif"
-- Gebruik de volgende kleurenvariabelen:
+[X] Maak gebruik van een reset.css
+[] De algemene layout van de website staat in een **grid**
+[] Binnen sections zoals portfolio gebrui je **flexbox**
+[X] Gebruik als font "Arial, Helvetica, sans-serif"
+[x] Gebruik de volgende kleurenvariabelen:
   - achtergrondkleur (`--bg-color`) = `rgb(244,244,244)`,
   - h1 (`--secondary-color`) = `rgb(231,227,79)`
   - h2 (`--primary-color`) = `rgb(18,18,18)`
